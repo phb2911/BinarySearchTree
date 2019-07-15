@@ -1,0 +1,17 @@
+Binary Tree Search
+==================
+
+This project consists of the implementation of a Binary Search Tree list. The list behaves as a dictionary storing a node containing an integer key and a string value. The nodes are stored according to their key value, the ones with larger values are stored in the left branch and the ones with lesser values are stored in the right.
+
+The class BTSList implements the list itself. It contains several methods used to add, delete or update elements in the list. The list stores two different types of nodes, both implemented by the IBSTNode interface, BSTLeafNode and BSTInternalNode. The difference between the nodes is that the BSTIntenalNode stores references to the left and right children nodes and the BSTLeafNode has no children or null references.
+
+The items stored in the list can be accessed through a foreach loop, where KeyValuePair<int, string> objects are retrieved. Hence the necessity to inclued a class that implements a stack of IBSTNodes.
+
+The parameter “iterations” passed by reference found in the getValue() method was purely used during debut to keep track of the number of iterations given by the method in order to check the efficiency of the search algorithm.
+
+The methods Count and FullCount do basically the same thing, they return the number of items in the list. The difference is that the Count method returns the value of a variable that keeps track of the items added and removed from the list, as for the FullCount, it actually counts each item and returns the result. Count uses less resources, but FullCount seems to be more reliable, in spite of the fact that their results have never differed during testing.
+
+2019-07-15
+
+Pablo B
+phb2911@gmail.com
